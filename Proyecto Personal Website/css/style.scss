@@ -1,0 +1,115 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../fondo_darkpaths.png");
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#video-bg>video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+$colorHeader: #78020f;
+$header-bg: linear-gradient(to bottom, $colorHeader, #280206);
+$subnav-link-opacity: 0.15;
+$transition: all .35s ease-in-out;
+$header-height: 3.5rem;
+$font-weight-top-menu: bold;
+$subnav-link-padding: 0.3rem;
+$subnav-font-size: 1.5rem;
+
+
+.top-menu {
+  background: $header-bg;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  margin: 0;
+  padding-top: $header-height;
+  font-weight: $font-weight-top-menu;
+  color: white;
+  padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
+
+
+  ul {
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    padding-top: 5.2rem;
+
+    bottom: 0;
+
+
+
+    li {
+      display: inline;
+
+      a {
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: $subnav-link-padding 1.5rem;
+
+        &.is-active {
+          background: rgba(250, 250, 250, $subnav-link-opacity);
+        }
+
+        &:hover {
+          background: rgba(250, 250, 250, $subnav-link-opacity);
+          transition: $transition;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer-common-styles {
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 999;
+}
+
+#footer-index {
+  @include footer-common-styles;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-index {
+    @include footer-common-styles;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+}
