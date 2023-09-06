@@ -11977,7 +11977,7 @@ body {
 }
 
 body {
-  background: linear-gradient(to bottom, #78020f, #280206);
+  background-image: url(../img/background-image.jpg);
   background-size: auto;
   background-position: center;
   display: flex;

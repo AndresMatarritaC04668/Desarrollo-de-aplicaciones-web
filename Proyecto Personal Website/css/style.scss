@@ -11,7 +11,7 @@ body {
 $colorHeader: #78020f;
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 body {
-  background: $header-bg;
+  background-image: url(../img/background-image.jpg);
   background-size: auto;
   background-position: center;
   display: flex;
