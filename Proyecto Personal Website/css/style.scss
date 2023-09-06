@@ -1,23 +1,71 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 html,
 body {
   height: 100%;
 }
 
-.be {
-  background-image: url("../background-image.jpg");
+body {
+  background-image: url("../backgroundImage.jpg");
   background-size: auto;
   background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-.content {
-  flex: 1 0 auto;
+$color-Contenedor: rgba(120, 6, 15, 0.8); // Define el color de fondo para los contenedores
+$borde-Blanco: 2px solid white; // Define el estilo del borde blanco
+
+#body {
+  @include make-container();
+
+  #body-row {
+    @include make-row(1);
+  }
+
+  #solution {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(md) {
+      @include make-col(2);
+    }
+    
+    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
+    border: $borde-Blanco; // Aplica el borde blanco al contenedor
+  }
+
+  #development {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+
+    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
+    border: $borde-Blanco; // Aplica el borde blanco al contenedor
+    color: white;
+  }
+
+  #latest-news {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+
+    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
+    border: $borde-Blanco; // Aplica el borde blanco al contenedor
+  }
 }
 
 
+
+.content {
+  flex: 1 0 auto;
+}
 
 #video-bg {
   position: fixed;
@@ -40,7 +88,7 @@ $colorHeader: #78020f;
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 $subnav-link-opacity: 0.15;
 $transition: all .35s ease-in-out;
-$header-height: 3.5rem;
+$header-height: 3.1rem;
 $font-weight-top-menu: bold;
 $subnav-link-padding: 0.3rem;
 $subnav-font-size: 1.5rem;
@@ -104,6 +152,11 @@ $subnav-font-size: 1.5rem;
 
 #footer-index {
   @include footer-common-styles;
+}
+
+#footer-general {
+  @include footer-common-styles;
+  background: rgba(120, 2, 15, 0.5);
 }
 
 @media screen and (max-width: 768px) {
