@@ -8,8 +8,10 @@ body {
   height: 100%;
 }
 
+$colorHeader: #78020f;
+$header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 body {
-  background-image: url("../img/background-img.jpg");
+  background: $header-bg;
   background-size: auto;
   background-position: center;
   display: flex;
@@ -33,7 +35,7 @@ $borde-Blanco: 2px solid white; // Define el estilo del borde blanco
       @include make-col(2);
     }
     
-    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
+    background: $header-bg;
     border: $borde-Blanco; // Aplica el borde blanco al contenedor
   }
 
@@ -44,7 +46,7 @@ $borde-Blanco: 2px solid white; // Define el estilo del borde blanco
       @include make-col(4);
     }
 
-    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
+    background: $header-bg;
     border: $borde-Blanco; // Aplica el borde blanco al contenedor
     color: white;
   }
@@ -84,7 +86,7 @@ $borde-Blanco: 2px solid white; // Define el estilo del borde blanco
   object-fit: cover;
 }
 
-$colorHeader: #78020f;
+
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 $subnav-link-opacity: 0.15;
 $transition: all .35s ease-in-out;

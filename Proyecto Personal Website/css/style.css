@@ -11977,7 +11977,7 @@ body {
 }
 
 body {
-  background-image: url("../img/background-img.jpg");
+  background: linear-gradient(to bottom, #78020f, #280206);
   background-size: auto;
   background-position: center;
   display: flex;
@@ -12009,7 +12009,7 @@ body {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-  background-color: rgba(120, 6, 15, 0.8);
+  background: linear-gradient(to bottom, #78020f, #280206);
   border: 2px solid white;
 }
 @media (min-width: 768px) {
@@ -12025,7 +12025,7 @@ body {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-  background-color: rgba(120, 6, 15, 0.8);
+  background: linear-gradient(to bottom, #78020f, #280206);
   border: 2px solid white;
   color: white;
 }
