@@ -11980,6 +11980,12 @@ div {
   padding: 1rem;
 }
 
+header #logo {
+  position: relative;
+  overflow: visible;
+  left: auto;
+}
+
 h3, .h3 {
   text-align: center !important;
 }
