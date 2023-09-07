@@ -8,6 +8,13 @@ body {
   height: 100%;
 }
 
+div {
+  padding: 1rem;
+}
+
+h3{
+  text-align: center !important;
+}
 $colorHeader: #78020f;
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 $color-Contenedor: rgba(135, 6, 17, 0.8);
@@ -65,6 +72,7 @@ body {
     border: $border-Black;
     text-align: justify !important;
     max-width: 100%; 
+    text-align: center;
   }
 
   .boxOneRow {
@@ -88,6 +96,7 @@ body {
   }
 
 }
+
 
 .content {
   flex: 1 0 auto;
@@ -179,4 +188,11 @@ body {
       font-size: 14px;
     }
   }
+}
+
+.imgStyle {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  align-content: center;
 }
