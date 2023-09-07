@@ -10,60 +10,84 @@ body {
 
 $colorHeader: #78020f;
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
+$color-Contenedor: rgba(135, 6, 17, 0.8);
+$border-Black: 0.5px outset black;
+$border-White: 0.7px outset rgb(255, 255, 255);
+$subnav-link-opacity: 0.15;
+$transition: all .35s ease-in-out;
+$header-height: 2rem;
+$font-weight-top-menu: bold;
+$subnav-link-padding: 0.8rem;
+$subnav-font-size: 1.5rem;
+$font-color: rgb(215, 214, 214);
+
 body {
-  background-image: url(../img/background-image.jpg);
+  background-image: url(../img/background-image.png);
   background-size: auto;
   background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-$color-Contenedor: rgba(120, 6, 15, 0.8); // Define el color de fondo para los contenedores
-$borde-Blanco: 2px solid white; // Define el estilo del borde blanco
 
-#body {
+.body {
   @include make-container();
+  justify-content: center;
+  margin-bottom: 2rem;
 
-  #body-row {
+  .body-row-OneColumn {
     @include make-row(1);
+    justify-content: center;
   }
 
-  #solution {
-    @include make-col-ready();
-
-    @include media-breakpoint-up(md) {
-      @include make-col(2);
-    }
-    
-    background: $header-bg;
-    border: $borde-Blanco; // Aplica el borde blanco al contenedor
-  }
-
-  #development {
-    @include make-col-ready();
-
-    @include media-breakpoint-up(md) {
-      @include make-col(4);
-    }
-
-    background: $header-bg;
-    border: $borde-Blanco; // Aplica el borde blanco al contenedor
+  .title {
+    text-align: center;
     color: white;
+    padding: 1.2rem;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
   }
 
-  #latest-news {
+  @media only screen and (max-width: 640px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+
+  %boxGeneral{
+    background: rgba(255, 0, 0, 0.248);
+    color: $font-color;
+    border: $border-Black;
+    text-align: justify !important;
+    max-width: 100%; 
+  }
+
+  .boxOneRow {
+    @extend %boxGeneral;
     @include make-col-ready();
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+  }
+  
+
+  .boxTwoRow {
+    @extend %boxGeneral;
+    @include make-col-ready();
+    @include media-breakpoint-up(sm) {
       @include make-col(4);
     }
-
-    background-color: $color-Contenedor; // Aplica el color de fondo al contenedor
-    border: $borde-Blanco; // Aplica el borde blanco al contenedor
+    margin: 1rem;
+    border: $border-White;
   }
+
 }
-
-
 
 .content {
   flex: 1 0 auto;
@@ -87,13 +111,6 @@ $borde-Blanco: 2px solid white; // Define el estilo del borde blanco
 }
 
 
-$header-bg: linear-gradient(to bottom, $colorHeader, #280206);
-$subnav-link-opacity: 0.15;
-$transition: all .35s ease-in-out;
-$header-height: 3.1rem;
-$font-weight-top-menu: bold;
-$subnav-link-padding: 0.3rem;
-$subnav-font-size: 1.5rem;
 
 
 .top-menu {
@@ -104,25 +121,19 @@ $subnav-font-size: 1.5rem;
   margin: 0;
   padding-top: $header-height;
   font-weight: $font-weight-top-menu;
-  color: white;
+  color: $font-color;
   padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
-
-
+  
   ul {
     list-style-type: none;
     width: 100%;
     position: absolute;
-    padding-top: 5.2rem;
-
     bottom: 0;
-
-
-
+   
     li {
       display: inline;
-
       a {
-        color: white;
+        color: $font-color;
         font-size: 1.1rem;
         text-decoration: none;
         padding: $subnav-link-padding 1.5rem;
@@ -144,8 +155,8 @@ $subnav-font-size: 1.5rem;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  color: white;
-  position: fixed;
+  color: $font-color;
+  margin-top: auto;
   bottom: 0;
   width: 100%;
   flex-shrink: 0;
@@ -154,17 +165,18 @@ $subnav-font-size: 1.5rem;
 
 #footer-index {
   @include footer-common-styles;
+  position: fixed;
 }
 
 #footer-general {
   @include footer-common-styles;
-  background: rgba(120, 2, 15, 0.5);
-}
+  background: $header-bg;
 
-@media screen and (max-width: 768px) {
-  .footer-index {
-    @include footer-common-styles;
-    padding: 0.5rem;
-    font-size: 14px;
+  @media screen and (max-width: 768px) {
+    .footer-index {
+      @include footer-common-styles;
+      padding: 0.5rem;
+      font-size: 14px;
+    }
   }
 }
