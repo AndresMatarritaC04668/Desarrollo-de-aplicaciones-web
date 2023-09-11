@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrés Matarrita Miranda</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/menu-interactions.js"></script>
 </head>
 
 <body>
@@ -13,27 +13,37 @@
         <nav class="top-menu">
             <h1>Andrés Matarrita Miranda</h1>
             <ul>
-                <li><a href="index.html"></i> Inicio</a></li>
+                <li><a href="index.html" id="logo-style"><img alt="inicio"
+                            src="../Proyecto Personal Website/img/home_icon.png"></a></li>
                 <li><a href="misObjetivos.html">Mis Objetivos</a></li>
-                <li>
-                    <a href="#">Computación</a>
+                <li class="menu-item">
+                    <a class id="computacion" href="#">Computación</a>
+                    <span class="arrow"></span>
+                    <ul class="subMenu">
+                        <nav id="subMenu-Vertical">
+                            <li><a href="computacion.html">¿Por qué Computacion?</a></li>
+                            <li><a href="cursos.html">Cursos Preferidos</a></li>
+                            <li><a href="compañerosYProf.html">Mis Compañeros y Profesores</a></li>
+                            <li><a href="descargas.html">Descargas</a></li>
+                        </nav>
+                    </ul>
 
                 </li>
                 <li><a href="pasatiempos.html">Pasatiempos</a></li>
                 <li><a href="acercaDe.html">Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+
             </ul>
-        </nav>
     </header>
     <main>
-        <div class="body">
+        <div id="body">
             <div class="title">
-                <h1 class="title">Mis Pasatiempos</h1>
+                <h1 id="title">Mis Pasatiempos</h1>
             </div>
-            <div class="body-row-OneColumn">
-                <section class="boxTwoRow">
-                    <div class="card-section">
-                        <img src="img/gym.jpg" class="imgStyle">
+            <div id="body-container">
+                <section id="gym">
+                    <div id="gym-text">
+                        <img src="img/gym.jpg" alt="Imagen de gym" class="imgStyle">
                         <h3>Ir al gimnasio</h3>
                         <p>
                         <h5>Ir al gimnasio para realizar hipertrofia de cierta manera para mi no es un pasatiempo,
@@ -44,9 +54,23 @@
                     </div>
 
                 </section>
-                <section class="boxTwoRow">
-                    <div class="card-section">
-                        <img src="img/plataformas.jpg" class="imgStyle">
+                <section id="caminatas">
+                    <div id="caminatas-text">
+                        <img src="img/senderos.jpg" alt="Imagen de caminatas" class="imgStyle">
+                        <h3>Caminatas al aire libre</h3>
+                        <p>
+                        <h5>Hacer caminatas al aire libre es un pasatiempo que me
+                            libera de todos los problemas y del estrés. Siempre he
+                            sido fanatico de la naturaleza y la vegetación. Después
+                            de cada semestre siempre realizo una caminata para
+                            despejarme.
+                        </h5>
+                        </p>
+                    </div>
+                </section>
+                <section id="series">
+                    <div id="series-text">
+                        <img src="img/plataformas.jpg" alt="Imagen de series" class="imgStyle">
                         <h3>Ver series y anime</h3>
                         <p>
                         <h5>Ver series y anime en Netflix o en cualquier otra plataforma
@@ -59,20 +83,7 @@
                     </div>
 
                 </section>
-                <section class="boxTwoRow">
-                    <div class="card-section">
-                        <img src="img/senderos.jpg" class="imgStyle">
-                        <h3>Caminatas al aire libre</h3>
-                        <p>
-                        <h5>Hacer caminatas al aire libre es un pasatiempo que me
-                            libera de todos los problemas y del estrés. Siempre he
-                            sido fanatico de la naturaleza y la vegetación. Después
-                            de cada semestre siempre realizo una caminata para
-                            despejarme de todas la carga que tuve durante el curso lectivo
-                        </h5>
-                        </p>
-                    </div>
-                </section>
+
             </div>
         </div>
     </main>

@@ -11980,12 +11980,6 @@ div {
   padding: 1rem;
 }
 
-header #logo {
-  position: relative;
-  overflow: visible;
-  left: auto;
-}
-
 h3, .h3 {
   text-align: center !important;
 }
@@ -11998,7 +11992,12 @@ body {
   flex-direction: column;
 }
 
-.body {
+#logo-style img {
+  width: 2.5rem;
+  height: 2.5em;
+}
+
+#body {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
@@ -12006,10 +12005,10 @@ body {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7rem;
 }
-.body .body-row-OneColumn {
+#body #body-container,
+#body #acercaDe-container {
   --bs-gutter-x: 1;
   --bs-gutter-y: 0;
   display: flex;
@@ -12017,59 +12016,76 @@ body {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.body .title {
+#body #title {
   text-align: center;
   color: white;
-  padding: 1.2rem;
+  padding: 0;
   font-size: 5rem;
   font-weight: bold;
   font-family: Helvetica;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
-@media only screen and (max-width: 640px) {
-  .body .title {
-    font-size: 2.5rem;
-  }
-}
-.body .boxTwoRow, .body .boxOneRow {
+#body #gym,
+#body #caminatas,
+#body #series, #body #acercaDe, #body #misObjetivos {
   background: rgba(255, 0, 0, 0.248);
   color: rgb(215, 214, 214);
-  border: 0.5px outset black;
   text-align: justify !important;
   max-width: 100%;
   text-align: center;
 }
-.body .boxOneRow {
+#body #misObjetivos {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+  border: 0.5px outset black;
 }
 @media (min-width: 576px) {
-  .body .boxOneRow {
+  #body #misObjetivos {
     flex: 0 0 auto;
     width: 50%;
   }
 }
-.body .boxTwoRow {
+#body #acercaDe {
+  display: flex;
+  font-size: 18px;
+  max-width: 75%;
+}
+#body #gym,
+#body #caminatas,
+#body #series {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-  margin: 1rem;
+  margin: 0.5rem;
   border: 0.7px outset rgb(255, 255, 255);
 }
 @media (min-width: 576px) {
-  .body .boxTwoRow {
+  #body #gym,
+  #body #caminatas,
+  #body #series {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+}
+
+#misObjetivos-text,
+#gym-text,
+#caminatas-text,
+#series-text,
+#acercaDe-text {
+  padding: 2.5%;
+  text-align: justify;
 }
 
 .content {
@@ -12103,13 +12119,14 @@ body {
   padding-top: 2rem;
   font-weight: bold;
   color: rgb(215, 214, 214);
-  padding-bottom: 4.95rem;
+  padding-bottom: 5.15rem;
 }
 .top-menu ul {
   list-style-type: none;
   width: 100%;
   position: absolute;
   bottom: 0;
+  margin-bottom: 0 !important;
 }
 .top-menu ul li {
   display: inline;
@@ -12118,7 +12135,7 @@ body {
   color: rgb(215, 214, 214);
   font-size: 1.1rem;
   text-decoration: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .top-menu ul li a.is-active {
   background: rgba(250, 250, 250, 0.15);
@@ -12126,6 +12143,49 @@ body {
 .top-menu ul li a:hover {
   background: rgba(250, 250, 250, 0.15);
   transition: all 0.35s ease-in-out;
+}
+
+.subMenu {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: 45%;
+  transform: translateX(-45%);
+}
+
+#subMenu-Vertical {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: 45%;
+  transform: translateX(-45%);
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  text-align: center;
+  font-size: 23px !important;
+  border: 0.7px outset rgb(255, 255, 255);
+  background-color: #78020f;
+}
+
+#subMenu-Vertical a {
+  padding: 0.2rem 0.2rem;
+}
+
+#computacion {
+  padding: 0.5rem 0rem;
+  margin: 1px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  padding: 0 !important;
+  vertical-align: middle;
 }
 
 #footer-index {
@@ -12169,9 +12229,30 @@ body {
   }
 }
 
-.imgStyle {
+.imgStyle, #image-acercaDe {
   width: 100%;
   height: 100%;
   padding: 2rem;
   align-content: center;
+}
+
+#image-acercaDe {
+  width: 40%;
+  height: 40%;
+}
+
+@media only screen and (max-width: 760px) {
+  #title {
+    font-size: 2.5rem !important;
+  }
+  #subMenu-Vertical {
+    left: 70%;
+  }
+  #acercaDe {
+    flex-direction: column;
+  }
+  #image-acercaDe {
+    width: auto;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

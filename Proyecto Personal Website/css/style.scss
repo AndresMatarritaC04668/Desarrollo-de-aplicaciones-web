@@ -13,17 +13,11 @@ div {
   padding: 1rem;
 }
 
-header{
-  #logo{
-    position: relative;
-    overflow: visible;
-    left: auto;
 
-  }
-}
-h3{
+h3 {
   text-align: center !important;
 }
+
 $colorHeader: #78020f;
 $header-bg: linear-gradient(to bottom, $colorHeader, #280206);
 $color-Contenedor: rgba(135, 6, 17, 0.8);
@@ -33,7 +27,7 @@ $subnav-link-opacity: 0.15;
 $transition: all .35s ease-in-out;
 $header-height: 2rem;
 $font-weight-top-menu: bold;
-$subnav-link-padding: 0.8rem;
+$subnav-link-padding: 0.9rem;
 $subnav-font-size: 1.5rem;
 $font-color: rgb(215, 214, 214);
 
@@ -45,21 +39,27 @@ body {
   flex-direction: column;
 }
 
+#logo-style img {
+  width: 2.5rem;
+  height: 2.5em;
+}
 
-.body {
+#body {
   @include make-container();
-  justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7rem;
 
-  .body-row-OneColumn {
+  #body-container,
+  #acercaDe-container {
     @include make-row(1);
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  .title {
+  #title {
     text-align: center;
     color: white;
-    padding: 1.2rem;
+    padding: 0;
     font-size: 5rem;
     font-weight: bold;
     font-family: Helvetica;
@@ -69,43 +69,58 @@ body {
       0 20px 20px rgba(0, 0, 0, .15);
   }
 
-  @media only screen and (max-width: 640px) {
-    .title {
-      font-size: 2.5rem;
-    }
-  }
-
-  %boxGeneral{
+  %boxGeneral {
     background: rgba(255, 0, 0, 0.248);
     color: $font-color;
-    border: $border-Black;
     text-align: justify !important;
-    max-width: 100%; 
+    max-width: 100%;
     text-align: center;
   }
 
-  .boxOneRow {
+  #misObjetivos {
     @extend %boxGeneral;
     @include make-col-ready();
 
     @include media-breakpoint-up(sm) {
       @include make-col(6);
     }
-  }
-  
 
-  .boxTwoRow {
+    border: $border-Black;
+  }
+
+  #acercaDe {
+    @extend %boxGeneral;
+    display: flex;
+    font-size: 18px;
+    max-width: 75%;
+  }
+
+  #gym,
+  #caminatas,
+  #series {
     @extend %boxGeneral;
     @include make-col-ready();
+
     @include media-breakpoint-up(sm) {
       @include make-col(4);
     }
-    margin: 1rem;
+
+    margin: 0.5rem;
     border: $border-White;
   }
 
 }
 
+
+
+#misObjetivos-text,
+#gym-text,
+#caminatas-text,
+#series-text,
+#acercaDe-text {
+  padding: 2.5%;
+  text-align: justify;
+}
 
 .content {
   flex: 1 0 auto;
@@ -129,9 +144,7 @@ body {
 }
 
 
-
-
-.top-menu {
+@mixin menu-styles {
   background: $header-bg;
   position: relative;
   overflow: visible;
@@ -141,20 +154,22 @@ body {
   font-weight: $font-weight-top-menu;
   color: $font-color;
   padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
-  
+
   ul {
     list-style-type: none;
     width: 100%;
     position: absolute;
     bottom: 0;
-   
+    margin-bottom: 0 !important;
+
     li {
       display: inline;
+
       a {
         color: $font-color;
         font-size: 1.1rem;
         text-decoration: none;
-        padding: $subnav-link-padding 1.5rem;
+        padding: 0.5rem 1.5rem;
 
         &.is-active {
           background: rgba(250, 250, 250, $subnav-link-opacity);
@@ -167,6 +182,56 @@ body {
       }
     }
   }
+}
+
+.top-menu {
+  @include menu-styles;
+
+}
+
+@mixin common-stylesSubMenu {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: 45%;
+  transform: translateX(-45%);
+}
+
+.subMenu {
+  @include common-stylesSubMenu();
+}
+
+#subMenu-Vertical {
+  @include common-stylesSubMenu();
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  text-align: center;
+  font-size: 23px !important;
+  border: $border-White;
+  background-color: #78020f;
+}
+
+#subMenu-Vertical a {
+  padding: 0.2rem 0.2rem;
+}
+
+
+
+#computacion {
+  padding: 0.5rem 0rem;
+  margin: 1px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  padding: 0 !important;
+  vertical-align: middle;
 }
 
 @mixin footer-common-styles {
@@ -206,3 +271,27 @@ body {
   align-content: center;
 }
 
+#image-acercaDe {
+  @extend .imgStyle;
+  width: 40%;
+  height: 40%;
+}
+
+@media only screen and (max-width: 760px) {
+  #title {
+    font-size: 2.5rem !important;
+  }
+
+  #subMenu-Vertical {
+    left: 70%;
+  }
+
+  #acercaDe {
+    flex-direction: column;
+  }
+
+  #image-acercaDe {
+    width: auto;
+    height: auto;
+  }
+}
