@@ -16,6 +16,7 @@ div {
 a {
   color: white !important;
 }
+
 h3 {
   text-align: center !important;
 }
@@ -90,16 +91,17 @@ body {
     border: $border-Black;
   }
 
-  #acercaDe{
+  #acercaDe {
     @extend %boxGeneral;
     display: flex;
     font-size: 18px;
-    max-width:90%;
+    max-width: 90%;
   }
 
   #gym,
   #caminatas,
-  #series , #contacto  {
+  #series,
+  #contacto {
     @extend %boxGeneral;
     @include make-col-ready();
 
@@ -119,7 +121,7 @@ body {
 #gym-text,
 #caminatas-text,
 #series-text,
-#acercaDe-text  {
+#acercaDe-text {
   padding: 2.5%;
   text-align: justify;
 }
@@ -293,7 +295,8 @@ body {
   }
 
   #subMenu-Vertical {
-    left: 70%;
+    left: 80%;
+    width: 200px;
   }
 
   #acercaDe {
@@ -303,5 +306,19 @@ body {
   #image-acercaDe {
     width: auto;
     height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      top: 85px;
+      right: 8.8%;
+      li {
+        a {
+          padding: 25px 20px;
+          font-size: 0.8rem !important;
+
+        }
+      }
+    }
   }
 }

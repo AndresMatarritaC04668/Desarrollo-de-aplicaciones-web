@@ -12035,7 +12035,8 @@ body {
 }
 #body #gym,
 #body #caminatas,
-#body #series, #body #contacto, #body #acercaDe, #body #misObjetivos {
+#body #series,
+#body #contacto, #body #acercaDe, #body #misObjetivos {
   background: rgba(255, 0, 0, 0.248);
   color: rgb(215, 214, 214);
   text-align: justify !important;
@@ -12064,7 +12065,8 @@ body {
 }
 #body #gym,
 #body #caminatas,
-#body #series, #body #contacto {
+#body #series,
+#body #contacto {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -12077,7 +12079,8 @@ body {
 @media (min-width: 576px) {
   #body #gym,
   #body #caminatas,
-  #body #series, #body #contacto {
+  #body #series,
+  #body #contacto {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -12257,7 +12260,8 @@ body {
     font-size: 2.5rem !important;
   }
   #subMenu-Vertical {
-    left: 70%;
+    left: 80%;
+    width: 200px;
   }
   #acercaDe {
     flex-direction: column;
@@ -12265,5 +12269,15 @@ body {
   #image-acercaDe {
     width: auto;
     height: auto;
+  }
+}
+@media only screen and (max-width: 760px) and (max-width: 768px) {
+  ul {
+    top: 85px;
+    right: 8.8%;
+  }
+  ul li a {
+    padding: 25px 20px;
+    font-size: 0.8rem !important;
   }
 }/*# sourceMappingURL=style.css.map */
