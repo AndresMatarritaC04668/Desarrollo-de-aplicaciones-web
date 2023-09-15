@@ -12043,7 +12043,7 @@ body {
 #body #diseño,
 #body #paralela, #body #acercaDe,
 #body #compañeros,
-#body #profesores, #body #computacionDecision, #body #misObjetivos {
+#body #profesores, #body #computacionDecision, #body #descargas, #body #misObjetivos {
   background: rgba(255, 0, 0, 0.248);
   color: rgb(215, 214, 214);
   text-align: justify !important;
@@ -12067,7 +12067,7 @@ body {
 }
 #body #acercaDe,
 #body #compañeros,
-#body #profesores, #body #computacionDecision {
+#body #profesores, #body #computacionDecision, #body #descargas {
   display: flex;
   font-size: 18px;
   max-width: 90%;
@@ -12114,7 +12114,7 @@ body {
 #diseño-text,
 #paralela-text,
 #compañeros-text,
-#profesores-text, #computacionDecision-text {
+#profesores-text, #computacionDecision-text, #descargas-text {
   padding: 2.5%;
   text-align: justify;
 }

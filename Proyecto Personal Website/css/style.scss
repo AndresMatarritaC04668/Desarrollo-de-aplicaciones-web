@@ -93,7 +93,7 @@ body {
 
   #acercaDe,
   #compañeros,
-  #profesores, #computacionDecision {
+  #profesores, #computacionDecision , #descargas{
     @extend %boxGeneral;
     display: flex;
     font-size: 18px;
@@ -136,7 +136,7 @@ body {
 #diseño-text,
 #paralela-text,
 #compañeros-text,
-#profesores-text ,#computacionDecision-text {
+#profesores-text ,#computacionDecision-text , #descargas-text {
   padding: 2.5%;
   text-align: justify;
 }
