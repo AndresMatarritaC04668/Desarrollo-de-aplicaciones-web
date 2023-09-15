@@ -12010,6 +12010,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.7rem;
+  max-height: 40%;
 }
 #body #body-container,
 #body #acercaDe-container {
@@ -12065,6 +12066,7 @@ body {
   display: flex;
   font-size: 18px;
   max-width: 90%;
+  margin: 2rem;
 }
 #body #gym,
 #body #caminatas,
@@ -12082,7 +12084,7 @@ body {
   margin: 0.5rem;
   border: 0.7px outset rgb(255, 255, 255);
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   #body #gym,
   #body #caminatas,
   #body #series,
@@ -12257,7 +12259,7 @@ body {
 
 .imgStyle, #image-acercaDe {
   width: 100%;
-  height: 100%;
+  height: 14rem;
   align-content: center;
 }
 
@@ -12266,7 +12268,7 @@ body {
   height: 25%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #title {
     font-size: 2.5rem !important;
   }
@@ -12276,6 +12278,7 @@ body {
   }
   #acercaDe {
     flex-direction: column;
+    width: 100%;
   }
   #image-acercaDe {
     width: auto;
@@ -12284,8 +12287,6 @@ body {
   #contacto-text ul a {
     font-size: 1.2rem;
   }
-}
-@media only screen and (max-width: 760px) and (max-width: 768px) {
   ul {
     top: 85px;
     right: 8.8%;
