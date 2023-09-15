@@ -101,7 +101,7 @@ body {
   #gym,
   #caminatas,
   #series,
-  #contacto {
+  #contacto, #programacion , #basesDeDatos ,#diseño {
     @extend %boxGeneral;
     @include make-col-ready();
 
@@ -121,7 +121,7 @@ body {
 #gym-text,
 #caminatas-text,
 #series-text,
-#acercaDe-text {
+#acercaDe-text , #programacion-text ,  #basesDeDatos-text, #diseño-text{
   padding: 2.5%;
   text-align: justify;
 }
@@ -278,7 +278,7 @@ body {
 .imgStyle {
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  
   align-content: center;
 }
 
