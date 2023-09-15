@@ -308,6 +308,14 @@ body {
     height: auto;
   }
 
+  #contacto-text{
+    ul{
+      a{
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
     ul {
       top: 85px;
