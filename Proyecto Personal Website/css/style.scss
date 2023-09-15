@@ -93,7 +93,7 @@ body {
 
   #acercaDe,
   #compañeros,
-  #profesores {
+  #profesores, #computacionDecision {
     @extend %boxGeneral;
     display: flex;
     font-size: 18px;
@@ -136,7 +136,7 @@ body {
 #diseño-text,
 #paralela-text,
 #compañeros-text,
-#profesores-text {
+#profesores-text ,#computacionDecision-text {
   padding: 2.5%;
   text-align: justify;
 }
@@ -314,12 +314,12 @@ body {
     width: 200px;
   }
 
-  #acercaDe , #compañeros , #profesores {
+  #acercaDe , #compañeros , #profesores ,#computacionDecision {
     flex-direction: column;
     width: 100%;
   }
 
-  #image-acercaDe , #image-compañeros , #image-profesores {
+  #image-acercaDe , #image-compañeros , #image-profesores , #image-computacionDecision {
     width: auto;
     height: auto;
   }

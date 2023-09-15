@@ -12043,7 +12043,7 @@ body {
 #body #diseño,
 #body #paralela, #body #acercaDe,
 #body #compañeros,
-#body #profesores, #body #misObjetivos {
+#body #profesores, #body #computacionDecision, #body #misObjetivos {
   background: rgba(255, 0, 0, 0.248);
   color: rgb(215, 214, 214);
   text-align: justify !important;
@@ -12067,7 +12067,7 @@ body {
 }
 #body #acercaDe,
 #body #compañeros,
-#body #profesores {
+#body #profesores, #body #computacionDecision {
   display: flex;
   font-size: 18px;
   max-width: 90%;
@@ -12114,7 +12114,7 @@ body {
 #diseño-text,
 #paralela-text,
 #compañeros-text,
-#profesores-text {
+#profesores-text, #computacionDecision-text {
   padding: 2.5%;
   text-align: justify;
 }
@@ -12286,11 +12286,11 @@ body {
     left: 80%;
     width: 200px;
   }
-  #acercaDe, #compañeros, #profesores {
+  #acercaDe, #compañeros, #profesores, #computacionDecision {
     flex-direction: column;
     width: 100%;
   }
-  #image-acercaDe, #image-compañeros, #image-profesores {
+  #image-acercaDe, #image-compañeros, #image-profesores, #image-computacionDecision {
     width: auto;
     height: auto;
   }
