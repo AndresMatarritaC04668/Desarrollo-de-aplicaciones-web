@@ -12267,13 +12267,13 @@ body {
   }
 }
 
-.imgStyle, #image-acercaDe, #image-compañeros, #image-profesores {
+.imgStyle, #image-acercaDe, #image-compañeros, #image-profesores, #image-computacionDecision {
   width: 100%;
   height: 14rem;
   align-content: center;
 }
 
-#image-acercaDe, #image-compañeros, #image-profesores {
+#image-acercaDe, #image-compañeros, #image-profesores, #image-computacionDecision {
   width: 25%;
   height: 25%;
 }

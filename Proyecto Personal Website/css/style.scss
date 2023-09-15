@@ -298,10 +298,11 @@ body {
 }
 
 
-#image-acercaDe , #image-compañeros , #image-profesores {
+#image-acercaDe , #image-compañeros , #image-profesores , #image-computacionDecision {
   @extend .imgStyle;
   width: 25%;
   height: 25%;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -319,7 +320,7 @@ body {
     width: 100%;
   }
 
-  #image-acercaDe , #image-compañeros , #image-profesores , #image-computacionDecision {
+  #image-acercaDe , #image-compañeros , #image-profesores , #image-computacionDecision , {
     width: auto;
     height: auto;
   }
