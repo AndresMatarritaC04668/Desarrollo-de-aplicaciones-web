@@ -12040,7 +12040,10 @@ body {
 #body #contacto,
 #body #programacion,
 #body #basesDeDatos,
-#body #diseño, #body #paralela, #body #acercaDe, #body #misObjetivos {
+#body #diseño,
+#body #paralela, #body #acercaDe,
+#body #compañeros,
+#body #profesores, #body #misObjetivos {
   background: rgba(255, 0, 0, 0.248);
   color: rgb(215, 214, 214);
   text-align: justify !important;
@@ -12062,7 +12065,9 @@ body {
     width: 50%;
   }
 }
-#body #acercaDe {
+#body #acercaDe,
+#body #compañeros,
+#body #profesores {
   display: flex;
   font-size: 18px;
   max-width: 90%;
@@ -12074,7 +12079,8 @@ body {
 #body #contacto,
 #body #programacion,
 #body #basesDeDatos,
-#body #diseño, #body #paralela {
+#body #diseño,
+#body #paralela {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -12091,7 +12097,8 @@ body {
   #body #contacto,
   #body #programacion,
   #body #basesDeDatos,
-  #body #diseño, #body #paralela {
+  #body #diseño,
+  #body #paralela {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -12104,7 +12111,10 @@ body {
 #acercaDe-text,
 #programacion-text,
 #basesDeDatos-text,
-#diseño-text, #paralela-text {
+#diseño-text,
+#paralela-text,
+#compañeros-text,
+#profesores-text {
   padding: 2.5%;
   text-align: justify;
 }
@@ -12257,13 +12267,13 @@ body {
   }
 }
 
-.imgStyle, #image-acercaDe {
+.imgStyle, #image-acercaDe, #image-compañeros, #image-profesores {
   width: 100%;
   height: 14rem;
   align-content: center;
 }
 
-#image-acercaDe {
+#image-acercaDe, #image-compañeros, #image-profesores {
   width: 25%;
   height: 25%;
 }
@@ -12276,11 +12286,11 @@ body {
     left: 80%;
     width: 200px;
   }
-  #acercaDe {
+  #acercaDe, #compañeros, #profesores {
     flex-direction: column;
     width: 100%;
   }
-  #image-acercaDe {
+  #image-acercaDe, #image-compañeros, #image-profesores {
     width: auto;
     height: auto;
   }
