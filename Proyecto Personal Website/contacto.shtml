@@ -1,0 +1,38 @@
+<!--#set var="TITULO" value="Contacto" -->
+<!--#include virtual="header.shtml" -->
+<div id="body">
+    <h1 id="title">Si quieres contactarme:</h1>
+    <div id="body-container">
+        <section id="contacto">
+            <div id="contacto-text">
+                <p>
+                <h4>
+                    <ul>
+                        <i class="fas fa-user"></i>&nbsp;&nbsp;<a>José Andrés Matarrita Miranda</a>
+                        <br>
+                        <br>
+                        <i class="far fa-envelope"></i>&nbsp;&nbsp;<a>andres1919@hotmail.com</a>
+                        <br>
+                        <br>
+                        <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a
+                            href="https://www.linkedin.com/in/andres-matarrita-8857b2241" class="white-link">Andres
+                            Matarrita</a>
+                        <br>
+                        <br>
+                        <i class="fab fa-facebook"></i>&nbsp;&nbsp;<a
+                            href="https://www.facebook.com/andres.matarrita.37/" class="white-link">Andres
+                            Matarrita</a>
+                        <br>
+                        <br>
+                        <i class="fab fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/AndresMatarritaC04668"
+                            class="white-link">AndresMatarritaC04668</a>
+                    </ul>
+                </h4>
+                </p>
+
+            </div>
+        </section>
+
+    </div>
+</div>
+<!--#include virtual="footer.shtml" -->

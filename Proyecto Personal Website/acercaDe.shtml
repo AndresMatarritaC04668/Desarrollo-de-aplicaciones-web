@@ -1,0 +1,28 @@
+<!--#set var="TITULO" value="Acerca de este sitio" -->
+<!--#include virtual="header.shtml" -->
+<div id="body">
+    <h1 id="title">Acerca de este sitio</h1>
+    <div id="body-container">
+        <section id="acercaDe">
+            <img src="img/atention.png" alt="Imagen para acerca de este sitio" id="image-acercaDe">
+            <section id="acercaDe-text">
+                <p>
+                    Para este sitio web, se utilizó:
+                <ul>
+                    <li>HTML5 y CSS para la creación.</li>
+                    <li>Bootstrap como framework frontend.</li>
+                    <li>Enfoque "Mobile First" para la adaptabilidad.</li>
+                    <li>Preprocesadores CSS para una organización eficiente.</li>
+                    <li>Separación de presentación y contenido para futuras modificaciones en el diseño gráfico.
+                    </li>
+                    <li>Metodología MaintainableCSS para un código CSS sostenible.</li>
+                    <li> Estrategia de diseño centrada en la experiencia del usuario.</li>
+                </ul>
+                </p>
+
+            </section>
+        </section>
+
+    </div>
+</div>
+<!--#include virtual="footer.shtml" -->

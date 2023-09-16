@@ -1,0 +1,28 @@
+<!--#set var="TITULO" value="Mis Objetivos" -->
+<!--#include virtual="header.shtml" -->
+<div id="body">
+    <h1 id="title">Mis Objetivos</h1>
+    <div id="body-container">
+        <section id="misObjetivos">
+            <div id="misObjetivos-text">
+                <h4>Mis metas a futuro las cuales voy a cumplir son:</h4>
+                <p>
+                <ul>
+                    <li>Voy a mejorar mi relación con Dios y ser una mejor persona, después de todo, Él es la
+                        máxima
+                        prioridad.</li>
+                    <li>Quiero graduarme a más tardar el próximo año para dedicarme a trabajar y ya no tener que
+                        ir
+                        a la universidad y gastar tiempo en los viajes de ida y vuelta.</li>
+                    <li>Quiero conseguir un trabajo estable remoto donde no sea necesario trasladarse.</li>
+                    <li>Más a futuro, quiero comprar mi propia casa.</li>
+                    <li>Quiero casarme con mi novia dentro de unos muy pocos años.</li>
+                    <li>Quiero vivir en paz y tener una felicidad constante.</li>
+                    <li>Quiero viajar y conocer muchos países junto a mi pareja.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+<!--#include virtual="footer.shtml" -->

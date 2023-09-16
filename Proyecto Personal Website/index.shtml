@@ -25,25 +25,25 @@
         <nav class="top-menu">
             <h1>Andrés Matarrita Miranda</h1>
             <ul>
-                <li><a href="index.html" id="logo-style"><img alt="inicio"
+                <li><a href="index.shtml" id="logo-style"><img alt="inicio"
                             src="../Proyecto Personal Website/img/home_icon.png"></a></li>
-                <li><a href="misObjetivos.html">Mis Objetivos</a></li>
+                <li><a href="misObjetivos.shtml">Mis Objetivos</a></li>
                 <li class="menu-item">
                     <a class id="computacion" href="#">Computación</a>
                     <span class="arrow"></span>
                     <ul class="subMenu">
                         <nav id="subMenu-Vertical">
-                            <li><a href="computacion.html">¿Por qué Computacion?</a></li>
-                            <li><a href="cursos.html">Cursos Preferidos</a></li>
-                            <li><a href="compañerosYProf.html">Mis Compañeros y Profesores</a></li>
-                            <li><a href="descargas.html">Descargas</a></li>
+                            <li><a href="computacion.shtml">¿Por qué Computacion?</a></li>
+                            <li><a href="cursos.shtml">Cursos Preferidos</a></li>
+                            <li><a href="compañerosYProf.shtml">Mis Compañeros y Profesores</a></li>
+                            <li><a href="descargas.shtml">Descargas</a></li>
                         </nav>
                     </ul>
 
                 </li>
-                <li><a href="pasatiempos.html">Pasatiempos</a></li>
-                <li><a href="acercaDe.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="pasatiempos.shtml">Pasatiempos</a></li>
+                <li><a href="acercaDe.shtml">Acerca de</a></li>
+                <li><a href="contacto.shtml">Contacto</a></li>
 
             </ul>
     </header>

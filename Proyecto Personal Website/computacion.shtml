@@ -1,0 +1,33 @@
+<!--#set var="TITULO" value="¿Por qué Computacion?" -->
+<!--#include virtual="header.shtml" -->
+<div id="body">
+    <h1 id="title">Acerca de este sitio</h1>
+    <div id="body-container">
+        <section id="computacionDecision">
+            <section id="computacionDecision-text">
+                <p>
+                <h3>Mi Elección de Estudiar Ingeniería del Software</h3>
+                <br>
+
+                Decidí estudiar ingeniería del software porque desde una edad temprana he sentido
+                una profunda fascinación por la tecnología y cómo esta puede dar vida a ideas innovadoras.
+                La posibilidad de crear soluciones digitales a medida me brinda una
+                vía para expresar mi creatividad y contribuir al mundo real.
+                <br><br>
+                Lo que me motiva aún más es el impacto tangible que la ingeniería del software puede
+                tener en la sociedad. No se trata solo de escribir código, sino de comprender las necesidades
+                de las personas y mejorar sus vidas a través de aplicaciones y sistemas digitales efectivos.
+                Además, soy consciente de la creciente demanda de profesionales en este campo,
+                lo que me ofrece una perspectiva emocionante y una base sólida para una carrera
+                en constante evolución.
+
+
+                </p>
+
+            </section>
+            <img src="img/computacion.gif" alt="Imagen para acerca de este sitio" id="image-computacionDecision">
+        </section>
+
+    </div>
+</div>
+<!--#include virtual="footer.shtml" -->

@@ -1,0 +1,53 @@
+<!--#set var="TITULO" value="Mis Pasatiempos" -->
+<!--#include virtual="header.shtml" -->
+<div id="body">
+    <div class="title">
+        <h1 id="title">Mis Pasatiempos</h1>
+    </div>
+    <div id="body-container">
+        <section id="gym">
+            <div id="gym-text">
+                <img src="img/gym.jpg" alt="Imagen de gym" class="imgStyle">
+                <h3>Ir al gimnasio</h3>
+                <p>
+                <h5>Ir al gimnasio para realizar hipertrofia de cierta manera para mi no es un pasatiempo,
+                    es algo que me encanta hacer 5 veces a la semana , llevo 6 años de hacerlo y es una de las
+                    mejores decisiones que he tomado para mi salud física y mental.
+                </h5>
+                </p>
+            </div>
+
+        </section>
+        <section id="caminatas">
+            <div id="caminatas-text">
+                <img src="img/senderos.jpg" alt="Imagen de caminatas" class="imgStyle">
+                <h3>Caminatas al aire libre</h3>
+                <p>
+                <h5>Hacer caminatas al aire libre es un pasatiempo que me
+                    libera de todos los problemas y del estrés. Siempre he
+                    sido fanatico de la naturaleza y la vegetación. Después
+                    de cada semestre siempre realizo una caminata para
+                    despejarme.
+                </h5>
+                </p>
+            </div>
+        </section>
+        <section id="series">
+            <div id="series-text">
+                <img src="img/plataformas.jpg" alt="Imagen de series" class="imgStyle">
+                <h3>Ver series y anime</h3>
+                <p>
+                <h5>Ver series y anime en Netflix o en cualquier otra plataforma
+                    digital me parece entretenido , siento que la vida no es
+                    solamente estudiar y esclavizarse en el estudio. También
+                    debemos disfrutar de los pequeños momentos viviendo nuestra
+                    vida.Suelo ver series y anime cuando como.
+                </h5>
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+</div>
+<!--#include virtual="footer.shtml" -->
