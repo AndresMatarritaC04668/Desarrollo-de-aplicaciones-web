@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Control de Formulario</title>
+</head>
+
+<body>
+    <p>Comentarios adicionales:
+    <p>
+        <textarea id="miTextArea" oninput="verificar(this, 230, document.getElementById('leyenda'))" rows="8" cols="40"
+            placeholder="Este es un comentario"></textarea>
+    <div id="leyenda">
+        </p>
+
+        <script>
+            function verificar(control, max, progressText) {
+                if (control.value.length > max) {
+                    control.value = control.value.substring(0, max);
+                  
+                } else {
+                    progressText.innerHTML = '(Carácteres máximos: ' + max + ')<br /> Usted tiene un espacio de ' + (max - control.value.length) + ' carácteres restantes';
+                }
+            }
+        </script>
+</body>
+
+</html>
